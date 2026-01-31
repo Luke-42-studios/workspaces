@@ -29,6 +29,34 @@ workspaces/
 
 ## Creating New Projects
 
+### Agent Quick Guide
+
+When creating a new project, ask these questions:
+
+1. **What is it?**
+   - A reusable library others will depend on → `libs/`
+   - A game engine or rendering framework → `engines/`
+   - An AI agent or automation assistant → `agents/`
+   - An app, game, or product → `projects/`
+   - A dev tool or utility → `tools/`
+   - Just experimenting/learning → `sandbox/`
+
+2. **What should it be called?**
+   - Use lowercase with hyphens: `my-project-name`
+
+3. **Create it:**
+   ```bash
+   cd ~/workspaces/<directory>
+   mkdir <project-name>
+   cd <project-name>
+   git init
+   ```
+
+4. **Does it depend on other workspace items?**
+   - If yes, update the Dependency Map below
+
+### Manual Steps
+
 1. **Choose the right directory** based on purpose (see table above)
 2. **Initialize as independent git repo** - each project manages its own history
 3. **Document dependencies** in project README and update dependency map below
