@@ -1,0 +1,21 @@
+# Ignore all project directories (they are independent repos)
+libs/
+engines/
+agents/
+projects/
+tools/
+sandbox/
+config/
+
+# Keep these files tracked
+!README.md
+!.gitignore
+
+# System files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Scripts that may be machine-specific
+setup-ollama-storage.sh
